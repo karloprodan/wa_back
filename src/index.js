@@ -43,6 +43,15 @@ app.post('/ads', (req, res) => {
 // Za dohvat oglasa od jednog poslodavca 
 app.get('/ads', (req, res) => {
     res.json({
+        "Oglas1": "Core Performance Engineer",
+        "Oglas2": "Pricing Analyst",
+        "Oglas3": "Techical Account Administrator",
+        "Oglas4": "Account Executive"
+    });
+})
+
+app.get('/ads/naziv', (req, res) => {
+    res.json({
         "ID": 1234,
         "Naziv": "Core Performance Engineer",
         "Tip posla": "Informatika i telekomunikacije",
